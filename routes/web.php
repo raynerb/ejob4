@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','accueilController@index');
+Route::get('/job','accueilJobController@index');
+Route::get('/joblist','jobSingleController@index');
+Route::get('/company','singleCompanyController@index');
+Route::get('/listcompany','listCompanyController@index');
+Route::get('/createcompanyjob','createCompanyJobController@index');
+Route::get('/contact','contactController@index');
+Route::get('/aboutus','aboutUsController@index');
+Route::get('/faq','faqController@index');
+Route::get('/price','priceController@index');
+Route::get('/blog','blogController@index');
